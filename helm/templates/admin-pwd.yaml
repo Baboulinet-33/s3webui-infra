@@ -1,0 +1,14 @@
+apiVersion: secrets.hashicorp.com/v1beta1
+kind: VaultStaticSecret
+metadata:
+  name: s3webui
+spec:
+  vaultAuthRef: {{ .Values.vault.authRef }}
+  mount: {{ .Values.vault.secretMount }}
+  path: "{{ .Values.env }}/admin"
+  refreshAfter: {{ .Values.vault.refreshAfter }}
+  type: {{ .Values.vault.secretType }}
+  destination:
+    name: s3webui
+    create: true
+    overwrite: true
