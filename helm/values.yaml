@@ -1,6 +1,7 @@
 s3webui:
   enabled: true
   fullnameOverride: s3webui
+  podSecurityContext: ~
   persistence:
     enabled: true
   ingress:
