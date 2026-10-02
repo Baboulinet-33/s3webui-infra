@@ -6,14 +6,17 @@ s3webui:
     enabled: true
   ingress:
     enabled: true
-    className: ""
-    annotations: {}
+    annotations:
+      cert-manager.io/cluster-issuer: self-signed-ca
     hosts:
       - host: s3webui.apps.ocpbm02s2.cores.r2.pi2.minint.fr
         paths:
           - path: /
             pathType: Prefix
-    tls: []
+    tls:
+    - hosts:
+      - s3webui.apps.ocpbm02s2.cores.r2.pi2.minint.fr
+      secretName: s3webui-tls
   env:
     ADMIN_EMAIL: "admin@numerique-interieur.com"
 
