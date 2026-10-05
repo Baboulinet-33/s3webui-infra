@@ -21,10 +21,9 @@ s3webui:
     ADMIN_EMAIL: "admin@numerique-interieur.com"
 
   # Secret are override by vso
-  secrets:
-    ADMIN_PASSWORD: "Tmp-Admin-9xK7!pQ2#vL8"
-    APP_ENCRYPTION_KEY: "bW9ja19lbmNyeXB0aW9uX2tleV8zMmJ5dGVzX2xvbmc="
-    SPRING_DATASOURCE_PASSWORD: "Tmp-Db-4mN8!zR6@qW2"
+  secrets: {}
+  existingSecrets:
+    - s3webui
 
 vault:
   enabled: true
