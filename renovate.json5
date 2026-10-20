@@ -1,0 +1,11 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+
+  // Self-hosted : l'action n'injecte pas le repo, on le déclare explicitement
+  platform: 'github',
+  repositories: ['Baboulinet-33/s3webui-infra'],
+  onboarding: false,
+
+  // Met à jour les archives charts/*.tgz en plus de Chart.yaml
+  postUpdateOptions: ['helmUpdateSubChartArchives'],
+}
