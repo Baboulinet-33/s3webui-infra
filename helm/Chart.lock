@@ -1,6 +1,6 @@
 dependencies:
 - name: s3webui
   repository: https://charts.wenisch.tech
-  version: 1.6.1
-digest: sha256:49fab4e8ec9ef9a8e87d1fb17be42450101687f1c2996197d25f0ea09f3be9d4
-generated: "2026-10-20T15:11:11.834189408Z"
+  version: 1.6.4
+digest: sha256:e8a5676cde1f489678b2176d46c66cdde15d469b712fb5c949aa4e9b41fba561
+generated: "2026-10-26T10:45:55.032291666Z"
